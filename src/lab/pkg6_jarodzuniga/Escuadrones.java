@@ -18,14 +18,14 @@ public class Escuadrones {
     protected String tipo;
     ArrayList<supers> conte=new ArrayList();
 
-    public Escuadrones() {
-    }
-
     public Escuadrones(String nombre, String lugar, String lider, String tipo) {
         this.nombre = nombre;
         this.lugar = lugar;
         this.lider = lider;
         this.tipo = tipo;
+    }
+
+    public Escuadrones() {
     }
 
     public String getNombre() {
@@ -60,9 +60,19 @@ public class Escuadrones {
         this.tipo = tipo;
     }
 
+    public ArrayList<supers> getConte() {
+        return conte;
+    }
+
+    public void setConte(ArrayList<supers> conte) {
+        this.conte = conte;
+    }
+
     @Override
     public String toString() {
-        return "nombre=" + nombre + ", lugar=" + lugar + ", lider=" + lider + ", tipo=" + tipo;
+        return "Escuadrones{" + "nombre=" + nombre + ", lugar=" + lugar + ", lider=" + lider + ", tipo=" + tipo + ", conte=" + conte + '}';
     }
+
+    
     
 }

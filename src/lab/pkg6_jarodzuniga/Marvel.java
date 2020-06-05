@@ -18,6 +18,10 @@ public class Marvel extends javax.swing.JFrame {
      */
     public Marvel() {
         initComponents();
+        
+        this.setLocationRelativeTo(null);
+        crear_super.setSize(700,700);
+        crear_es.setSize(700,700);
     }
 
     /**
@@ -29,6 +33,39 @@ public class Marvel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        crear_es = new javax.swing.JFrame();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        crear_super = new javax.swing.JFrame();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -36,23 +73,160 @@ public class Marvel extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
+        crear_es.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setText("Nombre:");
+        crear_es.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 141, -1, -1));
+
+        jLabel4.setText("Lugar de base:");
+        crear_es.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 212, -1, -1));
+
+        jLabel5.setText("Lider:");
+        crear_es.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 264, -1, -1));
+
+        jLabel6.setText("Tipo:");
+        crear_es.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 323, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel7.setText("Crear Escuadron");
+        crear_es.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
+        crear_es.getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 138, 313, -1));
+        crear_es.getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 261, 313, -1));
+        crear_es.getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 209, 313, -1));
+
+        jButton5.setText("Agregar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        crear_es.getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, -1, -1));
+
+        jButton6.setText("Limpiar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        crear_es.getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 440, -1, -1));
+
+        jButton7.setText("Salir");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        crear_es.getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, -1, -1));
+
+        jButton8.setText("Agregar super personas al escuadron");
+        crear_es.getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 280, 60));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Super heroes", "Super Villanos" }));
+        crear_es.getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 320, -1));
+
+        crear_super.setAlwaysOnTop(true);
+        crear_super.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel8.setText("Crear Super Persona");
+        crear_super.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(214, 41, -1, -1));
+
+        jLabel9.setText("Nombre:");
+        crear_super.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
+
+        jLabel10.setText("Poder:");
+        crear_super.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+
+        jLabel11.setText("Debildad:");
+        crear_super.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+
+        jLabel13.setText("Tipo:");
+        crear_super.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+
+        jLabel14.setText("Fuerza:");
+        crear_super.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+
+        jLabel15.setText("Agilidad Fisica:");
+        crear_super.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
+
+        jLabel16.setText("Agilidad Mental:");
+        crear_super.getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, -1));
+
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        crear_super.getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 360, -1));
+        crear_super.getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 360, -1));
+        crear_super.getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 360, 20));
+
+        jTextField9.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField9.setText("(1-100)");
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField9ActionPerformed(evt);
+            }
+        });
+        crear_super.getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 360, -1));
+
+        jTextField10.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField10.setText("(1-100)");
+        crear_super.getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 360, -1));
+
+        jTextField11.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField11.setText("(1-100)");
+        crear_super.getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 360, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Heroe", "Villano" }));
+        crear_super.getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 360, -1));
+
+        jButton9.setText("Limpiar");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        crear_super.getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 520, -1, -1));
+
+        jButton10.setText("Salir");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        crear_super.getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, -1, -1));
+
+        jButton11.setText("Agregar");
+        crear_super.getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, -1, -1));
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
         setIconImages(null);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(255, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Crear Escuadron");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(255, 0, 0));
-        jButton2.setForeground(new java.awt.Color(255, 0, 0));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Crear Super persona");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 160, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
-        jButton3.setForeground(new java.awt.Color(255, 0, 0));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Salir ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +236,7 @@ public class Marvel extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(204, 0, 51));
-        jButton4.setForeground(new java.awt.Color(255, 0, 0));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Gestionar ");
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
 
@@ -76,12 +250,73 @@ public class Marvel extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\1366_2000.jpeg")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 560));
 
+        getAccessibleContext().setAccessibleName("mar");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        crear_es.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        crear_es.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+     
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       String nom,lug,lid,ti;
+       nom=jTextField1.getText();
+       lug=jTextField2.getText();
+       lid=jTextField3.getText();
+       ti=(String) jComboBox1.getSelectedItem();
+        if (ti.equals("Super heroes")) {
+            escuadron.add(new Escuadrones(nom, lug, lid, ti));
+        }else if(ti.equals("Super Villanos")){
+            escuadron.add(new Escuadrones(nom, lug, lid, ti));
+        }
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+       jTextField5.setText("");
+       jTextField6.setText("");
+       jTextField7.setText("");
+       jTextField10.setText("(1-100");
+       jTextField9.setText("(1-100");
+       jTextField11.setText("(1-100");
+
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        crear_super.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        crear_super.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,12 +354,45 @@ public class Marvel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFrame crear_es;
+    private javax.swing.JFrame crear_super;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 ArrayList<supers> heroes =new ArrayList();
 ArrayList<supers> villanos =new ArrayList();
