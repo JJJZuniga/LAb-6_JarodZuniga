@@ -6,6 +6,11 @@
 package lab.pkg6_jarodzuniga;
 
 import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
+import javax.swing.JTree;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
@@ -18,10 +23,12 @@ public class Marvel extends javax.swing.JFrame {
      */
     public Marvel() {
         initComponents();
-        
+
         this.setLocationRelativeTo(null);
-        crear_super.setSize(700,700);
-        crear_es.setSize(700,700);
+        crear_super.setSize(700, 700);
+        crear_es.setSize(700, 700);
+        gestionar.setSize(900, 900);
+        Agregar_a_escuadron.setSize(700, 700);
     }
 
     /**
@@ -66,12 +73,50 @@ public class Marvel extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
+        Gestionar = new javax.swing.JFrame();
+        Agregar_a_escuadron = new javax.swing.JFrame();
+        jLabel12 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lista = new javax.swing.JList<>();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        gestionar = new javax.swing.JFrame();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jButton16 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList<>();
+        jButton17 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jList3 = new javax.swing.JList<>();
+        jButton18 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
+        jButton19 = new javax.swing.JButton();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jList5 = new javax.swing.JList<>();
+        jLabel19 = new javax.swing.JLabel();
+        jButton20 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        eliminar = new javax.swing.JPopupMenu();
+        jLabel2 = new javax.swing.JLabel();
+        Simulacion = new javax.swing.JFrame();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jButton21 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
 
         crear_es.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -119,6 +164,11 @@ public class Marvel extends javax.swing.JFrame {
         crear_es.getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, -1, -1));
 
         jButton8.setText("Agregar super personas al escuadron");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         crear_es.getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 280, 60));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Super heroes", "Super Villanos" }));
@@ -198,7 +248,224 @@ public class Marvel extends javax.swing.JFrame {
         crear_super.getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, -1, -1));
 
         jButton11.setText("Agregar");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
         crear_super.getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, -1, -1));
+
+        javax.swing.GroupLayout GestionarLayout = new javax.swing.GroupLayout(Gestionar.getContentPane());
+        Gestionar.getContentPane().setLayout(GestionarLayout);
+        GestionarLayout.setHorizontalGroup(
+            GestionarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        GestionarLayout.setVerticalGroup(
+            GestionarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        Agregar_a_escuadron.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel12.setText("Agregar al escuadron");
+        Agregar_a_escuadron.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, -1, -1));
+
+        jScrollPane1.setViewportView(lista);
+
+        Agregar_a_escuadron.getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 420, 260));
+
+        jButton12.setText("Listo");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        Agregar_a_escuadron.getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, -1, -1));
+
+        jButton13.setText("Cargar");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        Agregar_a_escuadron.getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
+
+        jButton14.setText("Agregar");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        Agregar_a_escuadron.getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, -1, -1));
+
+        gestionar.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTabbedPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTabbedPane1MouseClicked(evt);
+            }
+        });
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel17.setText("Bienvenido");
+        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, -1, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\descarga.png")); // NOI18N
+        jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 360, 190));
+
+        jTabbedPane1.addTab("BIenvenido", jPanel4);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jScrollPane2.setViewportView(jList1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 592, 380));
+
+        jButton16.setText("Refresh");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, -1, -1));
+
+        jTabbedPane1.addTab("Heroes", jPanel1);
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jList2.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { " " };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane3.setViewportView(jList2);
+
+        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 597, 380));
+
+        jButton17.setText("Refresh");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, -1, -1));
+
+        jTabbedPane1.addTab("Villanos", jPanel2);
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jScrollPane4.setViewportView(jList3);
+
+        jPanel3.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 590, 370));
+
+        jButton18.setText("Refresh");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, -1, -1));
+
+        jTabbedPane1.addTab("Escuadrones", jPanel3);
+
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Escuadrones");
+        javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("persona");
+        javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("poder");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jScrollPane5.setViewportView(jTree1);
+
+        jButton19.setText("Refresh");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+
+        jScrollPane7.setViewportView(jList5);
+
+        jLabel19.setText("Escuadrones");
+
+        jButton20.setText("Añadir a arbol");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(158, 158, 158)
+                        .addComponent(jLabel19)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(212, 212, 212)
+                .addComponent(jButton19)
+                .addGap(88, 88, 88)
+                .addComponent(jButton20)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel19)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(31, 31, 31)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton19)
+                    .addComponent(jButton20))
+                .addContainerGap(108, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Arbol", jPanel5);
+
+        gestionar.getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 770, 550));
+
+        jButton15.setText("Regresar");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        gestionar.getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 600, -1, -1));
+
+        jLabel2.setBackground(new java.awt.Color(255, 51, 51));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\1366_2000.jpeg")); // NOI18N
+
+        javax.swing.GroupLayout SimulacionLayout = new javax.swing.GroupLayout(Simulacion.getContentPane());
+        Simulacion.getContentPane().setLayout(SimulacionLayout);
+        SimulacionLayout.setHorizontalGroup(
+            SimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        SimulacionLayout.setVerticalGroup(
+            SimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -238,6 +505,11 @@ public class Marvel extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(204, 0, 51));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Gestionar ");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -246,9 +518,18 @@ public class Marvel extends javax.swing.JFrame {
         jLabel1.setText("Bienvenido Vengador/ Gran villano");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\1366_2000.jpeg")); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 560));
+        jButton21.setBackground(new java.awt.Color(255, 51, 51));
+        jButton21.setForeground(new java.awt.Color(255, 255, 255));
+        jButton21.setText("Simulacion");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, -1, -1));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\1366_2000.jpeg")); // NOI18N
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getAccessibleContext().setAccessibleName("mar");
 
@@ -273,21 +554,24 @@ public class Marvel extends javax.swing.JFrame {
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText("");
-     
+
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-       String nom,lug,lid,ti;
-       nom=jTextField1.getText();
-       lug=jTextField2.getText();
-       lid=jTextField3.getText();
-       ti=(String) jComboBox1.getSelectedItem();
+        String nom, lug, lid, ti;
+        nom = jTextField1.getText();
+        lug = jTextField2.getText();
+        lid = jTextField3.getText();
+        ti = (String) jComboBox1.getSelectedItem();
         if (ti.equals("Super heroes")) {
-            escuadron.add(new Escuadrones(nom, lug, lid, ti));
-        }else if(ti.equals("Super Villanos")){
-            escuadron.add(new Escuadrones(nom, lug, lid, ti));
+            escuadron.add(new Escuadrones(nom, lug, lid, ti, agg));
+            JOptionPane.showMessageDialog(this, "Escuadron de Super heroes creado exitosamente");
+        } else if (ti.equals("Super Villanos")) {
+            escuadron.add(new Escuadrones(nom, lug, lid, ti, agg));
+
+            JOptionPane.showMessageDialog(this, "Escuadron de Super villanos creado exitosamente");
         }
-        
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
@@ -299,12 +583,12 @@ public class Marvel extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField9ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-       jTextField5.setText("");
-       jTextField6.setText("");
-       jTextField7.setText("");
-       jTextField10.setText("(1-100");
-       jTextField9.setText("(1-100");
-       jTextField11.setText("(1-100");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+        jTextField10.setText("(1-100");
+        jTextField9.setText("(1-100");
+        jTextField11.setText("(1-100");
 
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -317,6 +601,163 @@ public class Marvel extends javax.swing.JFrame {
         crear_super.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        String nombre, poder, debilidad, tipo;
+        int fuer, agi1, agi2;
+        nombre = jTextField5.getText();
+        poder = jTextField6.getText();
+        debilidad = jTextField7.getText();
+        tipo = (String) jComboBox2.getSelectedItem();
+        fuer = Integer.parseInt(jTextField9.getText());
+        agi1 = Integer.parseInt(jTextField10.getText());
+        agi2 = Integer.parseInt(jTextField11.getText());
+        if (tipo.equals("Heroe")) {
+            if (fuer + agi1 + agi2 > 100 || fuer + agi1 + agi2 < 100) {
+                JOptionPane.showMessageDialog(this, "Error no se puede crear");
+            } else {
+                heroes.add(new supers(nombre, poder, debilidad, " ", fuer, agi1, agi2));
+                JOptionPane.showMessageDialog(this, "Super heroe creado exitosamente");
+            }
+        } else if (tipo.equals("Villano")) {
+            if (fuer + agi1 + agi2 > 100 || fuer + agi1 + agi2 < 100) {
+                JOptionPane.showMessageDialog(this, "Error no se puede crear");
+            } else {
+                villanos.add(new supers(nombre, poder, debilidad, " ", fuer, agi1, agi2));
+                JOptionPane.showMessageDialog(this, "Super Villano creado exitosamente");
+            }
+        }
+
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        agg.clear();
+        crear_es.setVisible(false);
+        Agregar_a_escuadron.setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        crear_es.setVisible(true);
+        Agregar_a_escuadron.setVisible(false);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        String tipo;
+        tipo = (String) jComboBox1.getSelectedItem();
+        if (tipo.equals("Super heroes")) {
+            //Crear un objeto DefaultListModel
+            DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+            for (int i = 0; i < heroes.size(); i++) {
+                //Añadir cada elemento del ArrayList en el modelo de la lista
+                listModel.add(i, heroes.get(i));
+            }
+//Asociar el modelo de lista al JList
+            lista.setModel(listModel);
+        } else if (tipo.equals("Super Villanos")) {
+            //Crear un objeto DefaultListModel
+            DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+            for (int i = 0; i < villanos.size(); i++) {
+                //Añadir cada elemento del ArrayList en el modelo de la lista
+                listModel.add(i, villanos.get(i));
+            }
+//Asociar el modelo de lista al JList
+            lista.setModel(listModel);
+        }
+
+
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        int n = lista.getSelectedIndex();
+        l = n;
+        String tipo;
+        tipo = (String) jComboBox1.getSelectedItem();
+        if (tipo.equals("Super heroes")) {
+            agg.add(heroes.get(n));
+            heroes.get(n).setEscuadron(jTextField1.getText());
+            JOptionPane.showMessageDialog(this, "Agregadao");
+        } else if (tipo.equals("Super Villanos")) {
+            agg.add(heroes.get(n));
+            villanos.get(n).setEscuadron(jTextField1.getText());
+            JOptionPane.showMessageDialog(this, "agregado");
+        }
+
+
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        gestionar.setVisible(true);
+        this.setVisible(false);
+
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        gestionar.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
+
+    }//GEN-LAST:event_jTabbedPane1MouseClicked
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        //Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < heroes.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, heroes.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList1.setModel(listModel);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        //Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < villanos.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, villanos.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList2.setModel(listModel);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        //Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < escuadron.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, escuadron.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList3.setModel(listModel);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+//Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < escuadron.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, escuadron.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList5.setModel(listModel);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        Simulacion.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton21ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -332,16 +773,24 @@ public class Marvel extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Marvel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marvel.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Marvel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marvel.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Marvel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marvel.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Marvel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marvel.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -354,12 +803,27 @@ public class Marvel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFrame Agregar_a_escuadron;
+    private javax.swing.JFrame Gestionar;
+    private javax.swing.JFrame Simulacion;
     private javax.swing.JFrame crear_es;
     private javax.swing.JFrame crear_super;
+    private javax.swing.JPopupMenu eliminar;
+    private javax.swing.JFrame gestionar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -372,11 +836,16 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -384,6 +853,22 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JList<String> jList2;
+    private javax.swing.JList<String> jList3;
+    private javax.swing.JList<String> jList5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -393,9 +878,13 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTree jTree1;
+    private javax.swing.JList<String> lista;
     // End of variables declaration//GEN-END:variables
-ArrayList<supers> heroes =new ArrayList();
-ArrayList<supers> villanos =new ArrayList();
-ArrayList<Escuadrones> escuadron =new ArrayList();
-
+ArrayList<supers> heroes = new ArrayList();
+    ArrayList<supers> villanos = new ArrayList();
+    ArrayList<Escuadrones> escuadron = new ArrayList();
+    ArrayList agg = new ArrayList();
+    int l = 0;
+    DefaultMutableTreeNode nodo_seleccionado;
 }

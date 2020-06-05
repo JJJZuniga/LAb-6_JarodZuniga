@@ -84,7 +84,7 @@ public class supers{
 
     @Override
     public String toString() {
-        return "nombre=" + nombre + ", poder=" + poder + ", debilidad=" + debilidad + ", escuadron=" + escuadron + ", fuerza=" + fuerza + ", agilidad_f\u00edsica=" + agilidad_física + ", agilidad_menta=" + agilidad_menta;
+        return nombre + ", " + poder + "," + debilidad + ", "+ escuadron + "," + fuerza + ", " + agilidad_física + ", " + agilidad_menta;
     }
     
 }
