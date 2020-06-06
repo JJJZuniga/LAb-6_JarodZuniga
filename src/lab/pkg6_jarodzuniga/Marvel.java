@@ -87,17 +87,35 @@ public class Marvel extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jButton16 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jComboBox4 = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
-        jButton16 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jList2 = new javax.swing.JList<>();
         jButton17 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jList3 = new javax.swing.JList<>();
         jButton18 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jLabel29 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         jTree1 = new javax.swing.JTree();
@@ -110,6 +128,19 @@ public class Marvel extends javax.swing.JFrame {
         eliminar = new javax.swing.JPopupMenu();
         jLabel2 = new javax.swing.JLabel();
         Simulacion = new javax.swing.JFrame();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jList4 = new javax.swing.JList<>();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jList6 = new javax.swing.JList<>();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -321,10 +352,6 @@ public class Marvel extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jScrollPane2.setViewportView(jList1);
-
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 592, 380));
-
         jButton16.setText("Refresh");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -332,6 +359,36 @@ public class Marvel extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, -1, -1));
+
+        jButton24.setText("Eliminar");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, -1, -1));
+
+        jButton25.setText("Modificar");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, -1, -1));
+
+        jLabel27.setText("Nuevo nombre");
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, -1, -1));
+
+        jLabel28.setText("Nuevo tipo");
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 280, -1, -1));
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, 110, -1));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Heroe", "Villano" }));
+        jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 110, -1));
+
+        jScrollPane2.setViewportView(jList1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 592, 380));
 
         jTabbedPane1.addTab("Heroes", jPanel1);
 
@@ -354,6 +411,32 @@ public class Marvel extends javax.swing.JFrame {
         });
         jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, -1, -1));
 
+        jButton26.setText("Eliminar");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 40, -1, -1));
+
+        jButton27.setText("modificar");
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, -1, -1));
+
+        jLabel31.setText("Nuevo nombre");
+        jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+        jPanel2.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 110, -1));
+
+        jLabel32.setText("Nuevo tipo");
+        jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 280, -1, -1));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Heroe", "Villano" }));
+        jPanel2.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 110, -1));
+
         jTabbedPane1.addTab("Villanos", jPanel2);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -369,6 +452,30 @@ public class Marvel extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, -1, -1));
+
+        jButton28.setText("Eliminar");
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
+
+        jButton29.setText("Modificar");
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, -1, -1));
+
+        jLabel29.setText("Nuevo nombre");
+        jPanel3.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 200, -1, -1));
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 230, 110, -1));
+
+        jLabel33.setText("Nueva Locacion");
+        jPanel3.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 260, -1, -1));
+        jPanel3.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 110, -1));
 
         jTabbedPane1.addTab("Escuadrones", jPanel3);
 
@@ -449,23 +556,71 @@ public class Marvel extends javax.swing.JFrame {
                 jButton15ActionPerformed(evt);
             }
         });
-        gestionar.getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 600, -1, -1));
+        gestionar.getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 590, -1, -1));
 
         jLabel2.setBackground(new java.awt.Color(255, 51, 51));
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\1366_2000.jpeg")); // NOI18N
 
-        javax.swing.GroupLayout SimulacionLayout = new javax.swing.GroupLayout(Simulacion.getContentPane());
-        Simulacion.getContentPane().setLayout(SimulacionLayout);
-        SimulacionLayout.setHorizontalGroup(
-            SimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        SimulacionLayout.setVerticalGroup(
-            SimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        Simulacion.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jScrollPane6.setViewportView(jList4);
+
+        Simulacion.getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 231, 358));
+
+        jScrollPane8.setViewportView(jList6);
+
+        Simulacion.getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 215, 358));
+
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("vs");
+        Simulacion.getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 300, 30, 20));
+
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("Heroes");
+        Simulacion.getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, -1, -1));
+
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("Villanos");
+        Simulacion.getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 120, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Elegir oponentes");
+        Simulacion.getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, -1, -1));
+
+        jButton22.setBackground(new java.awt.Color(255, 0, 0));
+        jButton22.setForeground(new java.awt.Color(255, 255, 255));
+        jButton22.setText("A pelear!");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
+        Simulacion.getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 560, -1, -1));
+
+        jButton23.setBackground(new java.awt.Color(255, 0, 0));
+        jButton23.setForeground(new java.awt.Color(255, 255, 255));
+        jButton23.setText("Regresar");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
+        Simulacion.getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 600, -1, -1));
+
+        jComboBox3.setBackground(new java.awt.Color(255, 0, 0));
+        jComboBox3.setForeground(new java.awt.Color(255, 255, 255));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fuerza", "Habilidad Fisica", "Habilidad Mental" }));
+        Simulacion.getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, 110, 40));
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Pelea tipo:");
+        Simulacion.getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, -1, -1));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\maxresdefault (2).jpg")); // NOI18N
+        Simulacion.getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, -40, -1, -1));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -500,7 +655,7 @@ public class Marvel extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 390, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(204, 0, 51));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -526,7 +681,7 @@ public class Marvel extends javax.swing.JFrame {
                 jButton21ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, -1, -1));
+        getContentPane().add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, -1, -1));
 
         jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\1366_2000.jpeg")); // NOI18N
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -757,7 +912,116 @@ public class Marvel extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         Simulacion.setVisible(true);
         this.setVisible(false);
+        //Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < heroes.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, heroes.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList4.setModel(listModel);
+
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < villanos.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, villanos.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList6.setModel(listModel);
     }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        Simulacion.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        int t = jList4.getSelectedIndex(), y = jList6.getSelectedIndex();
+        String cb = (String) jComboBox3.getSelectedItem();
+        switch (cb) {
+            case "Fuerza":
+                if (heroes.get(t).getFuerza() > villanos.get(y).getFuerza()) {
+                    JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
+                } else if (heroes.get(t).getFuerza() < villanos.get(y).getFuerza()) {
+                    JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
+                } else {
+                    JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
+                }
+                break;
+            case "Habilidad Fisica":
+                if (heroes.get(t).getAgilidad_física() > villanos.get(y).getAgilidad_física()) {
+                    JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
+                } else if (heroes.get(t).getAgilidad_física() < villanos.get(y).getAgilidad_física()) {
+                    JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
+                } else {
+                    JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
+                }
+                break;
+            case "Habilidad Mental":
+                if (heroes.get(t).getAgilidad_menta() > villanos.get(y).getAgilidad_menta()) {
+                    JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
+                } else if (heroes.get(t).getAgilidad_menta() < villanos.get(y).getAgilidad_menta()) {
+                    JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
+                } else {
+                    JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
+                }
+                break;
+            default:
+                JOptionPane.showMessageDialog(this, "bien campeon");
+        }
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        int e = jList1.getSelectedIndex();
+        heroes.remove(e);
+        JOptionPane.showMessageDialog(this, "Heroe eliminado correctamente");
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        int e = jList2.getSelectedIndex();
+        villanos.remove(e);
+        JOptionPane.showMessageDialog(this, "villano eliminado correctamente");
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        int e = jList3.getSelectedIndex();
+        escuadron.remove(e);
+        JOptionPane.showMessageDialog(this, "Escuadron eliminado correctamente");
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        int e = jList1.getSelectedIndex();
+        String cb = (String) jComboBox4.getSelectedItem();
+
+        if (cb.equals("Heroe")) {
+            heroes.get(e).setNombre(jTextField4.getText());
+        } else {
+            villanos.add(new supers(heroes.get(e).getNombre(), heroes.get(e).getPoder(), heroes.get(e).getDebilidad(), " ", heroes.get(e).getFuerza(), heroes.get(e).getAgilidad_física(), heroes.get(e).getAgilidad_menta()));
+            heroes.remove(e);
+        }
+        JOptionPane.showMessageDialog(this, "Heroe modificado correctamente");
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+         int e = jList1.getSelectedIndex();
+         escuadron.get(e).setNombre(jTextField8.getText());
+         escuadron.get(e).setLugar(jTextField8.getText());
+         JOptionPane.showMessageDialog(this, "Escuadron modificado correctamente");
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+       int e = jList2.getSelectedIndex();
+        String cb = (String) jComboBox6.getSelectedItem();
+
+        if (cb.equals("Villano")) {
+            villanos.get(e).setNombre(jTextField4.getText());
+        } else {
+            heroes.add(new supers(heroes.get(e).getNombre(), heroes.get(e).getPoder(), heroes.get(e).getDebilidad(), " ", heroes.get(e).getFuerza(), heroes.get(e).getAgilidad_física(), heroes.get(e).getAgilidad_menta()));
+            villanos.remove(e);
+        }
+        JOptionPane.showMessageDialog(this, "Villano modificado correctamente");
+    }//GEN-LAST:event_jButton27ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -824,6 +1088,14 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -833,6 +1105,9 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -846,7 +1121,19 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -856,7 +1143,9 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JList<String> jList3;
+    private javax.swing.JList<String> jList4;
     private javax.swing.JList<String> jList5;
+    private javax.swing.JList<String> jList6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -867,16 +1156,22 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     private javax.swing.JTree jTree1;
     private javax.swing.JList<String> lista;
