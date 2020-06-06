@@ -29,6 +29,7 @@ public class Marvel extends javax.swing.JFrame {
         crear_es.setSize(700, 700);
         gestionar.setSize(900, 900);
         Agregar_a_escuadron.setSize(700, 700);
+        Simulacion.setSize(900, 750);
     }
 
     /**
@@ -140,6 +141,8 @@ public class Marvel extends javax.swing.JFrame {
         jButton23 = new javax.swing.JButton();
         jComboBox3 = new javax.swing.JComboBox<>();
         jLabel25 = new javax.swing.JLabel();
+        jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -240,7 +243,7 @@ public class Marvel extends javax.swing.JFrame {
         });
         crear_super.getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 360, -1));
         crear_super.getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 360, -1));
-        crear_super.getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 360, 20));
+        crear_super.getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 360, -1));
 
         jTextField9.setForeground(new java.awt.Color(204, 204, 204));
         jTextField9.setText("(1-100)");
@@ -479,6 +482,8 @@ public class Marvel extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Escuadrones", jPanel3);
 
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Escuadrones");
         javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("persona");
         javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("poder");
@@ -487,16 +492,22 @@ public class Marvel extends javax.swing.JFrame {
         jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         jScrollPane5.setViewportView(jTree1);
 
+        jPanel5.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(529, 34, 163, -1));
+
         jButton19.setText("Refresh");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
             }
         });
+        jPanel5.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 387, -1, -1));
 
         jScrollPane7.setViewportView(jList5);
 
+        jPanel5.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 54, 283, 289));
+
         jLabel19.setText("Escuadrones");
+        jPanel5.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 20, -1, -1));
 
         jButton20.setText("Añadir a arbol");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
@@ -504,47 +515,7 @@ public class Marvel extends javax.swing.JFrame {
                 jButton20ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(158, 158, 158)
-                        .addComponent(jLabel19)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73))
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(212, 212, 212)
-                .addComponent(jButton19)
-                .addGap(88, 88, 88)
-                .addComponent(jButton20)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel19)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(31, 31, 31)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton19)
-                    .addComponent(jButton20))
-                .addContainerGap(108, Short.MAX_VALUE))
-        );
+        jPanel5.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(377, 387, -1, -1));
 
         jTabbedPane1.addTab("Arbol", jPanel5);
 
@@ -619,8 +590,24 @@ public class Marvel extends javax.swing.JFrame {
         jLabel25.setText("Pelea tipo:");
         Simulacion.getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, -1, -1));
 
+        jButton30.setText("Refrescar heroe");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
+        Simulacion.getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, -1, -1));
+
+        jButton31.setText("Refrescar villano");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
+        Simulacion.getContentPane().add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 520, -1, -1));
+
         jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhon Zuniga\\Pictures\\maxresdefault (2).jpg")); // NOI18N
-        Simulacion.getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, -40, -1, -1));
+        Simulacion.getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -20, -1, -1));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -912,23 +899,9 @@ public class Marvel extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         Simulacion.setVisible(true);
         this.setVisible(false);
-        //Crear un objeto DefaultListModel
-        DefaultListModel listModel = new DefaultListModel();
-//Recorrer el contenido del ArrayList
-        for (int i = 0; i < heroes.size(); i++) {
-            //Añadir cada elemento del ArrayList en el modelo de la lista
-            listModel.add(i, heroes.get(i));
-        }
-//Asociar el modelo de lista al JList
-        jList4.setModel(listModel);
+        
 
-//Recorrer el contenido del ArrayList
-        for (int i = 0; i < villanos.size(); i++) {
-            //Añadir cada elemento del ArrayList en el modelo de la lista
-            listModel.add(i, villanos.get(i));
-        }
-//Asociar el modelo de lista al JList
-        jList6.setModel(listModel);
+
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
@@ -939,37 +912,41 @@ public class Marvel extends javax.swing.JFrame {
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         int t = jList4.getSelectedIndex(), y = jList6.getSelectedIndex();
         String cb = (String) jComboBox3.getSelectedItem();
-        switch (cb) {
-            case "Fuerza":
-                if (heroes.get(t).getFuerza() > villanos.get(y).getFuerza()) {
-                    JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
-                } else if (heroes.get(t).getFuerza() < villanos.get(y).getFuerza()) {
-                    JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
-                } else {
-                    JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
-                }
-                break;
-            case "Habilidad Fisica":
-                if (heroes.get(t).getAgilidad_física() > villanos.get(y).getAgilidad_física()) {
-                    JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
-                } else if (heroes.get(t).getAgilidad_física() < villanos.get(y).getAgilidad_física()) {
-                    JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
-                } else {
-                    JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
-                }
-                break;
-            case "Habilidad Mental":
-                if (heroes.get(t).getAgilidad_menta() > villanos.get(y).getAgilidad_menta()) {
-                    JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
-                } else if (heroes.get(t).getAgilidad_menta() < villanos.get(y).getAgilidad_menta()) {
-                    JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
-                } else {
-                    JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
-                }
-                break;
-            default:
-                JOptionPane.showMessageDialog(this, "bien campeon");
+        int f, ff;
+        int hf, hff;
+        int hm, hmm;
+        f = heroes.get(t).getFuerza();
+        ff = villanos.get(y).getFuerza();
+        hf = heroes.get(t).getAgilidad_física();
+        hff = villanos.get(y).getAgilidad_física();
+        hm = heroes.get(t).getAgilidad_menta();
+        hmm = villanos.get(y).getAgilidad_menta();
+        if (cb.equals("Fuerza")) {
+            if (f > ff) {
+                JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
+            } else if (heroes.get(t).getFuerza() < villanos.get(y).getFuerza()) {
+                JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
+            } else {
+                JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
+            }
+        } else if (cb.equals("Habilidad Fisica")) {
+            if (hf > hff) {
+                JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
+            } else if (heroes.get(t).getAgilidad_física() < villanos.get(y).getAgilidad_física()) {
+                JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
+            } else {
+                JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
+            }
+        } else if (cb.equals("Habilidad Mental")) {
+            if (hm > hmm) {
+                JOptionPane.showMessageDialog(this, heroes.get(t).getNombre() + "Es el ganador");
+            } else if (heroes.get(t).getAgilidad_menta() < villanos.get(y).getAgilidad_menta()) {
+                JOptionPane.showMessageDialog(this, villanos.get(y).getNombre() + "Es el ganador");
+            } else {
+                JOptionPane.showMessageDialog(this, "es un empate entes " + heroes.get(t).getNombre() + " y " + villanos.get(y).getNombre());
+            }
         }
+       
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
@@ -995,7 +972,7 @@ public class Marvel extends javax.swing.JFrame {
         String cb = (String) jComboBox4.getSelectedItem();
 
         if (cb.equals("Heroe")) {
-            heroes.get(e).setNombre(jTextField4.getText());
+            ((supers) heroes.get(e)).setNombre(jTextField4.getText());
         } else {
             villanos.add(new supers(heroes.get(e).getNombre(), heroes.get(e).getPoder(), heroes.get(e).getDebilidad(), " ", heroes.get(e).getFuerza(), heroes.get(e).getAgilidad_física(), heroes.get(e).getAgilidad_menta()));
             heroes.remove(e);
@@ -1004,24 +981,49 @@ public class Marvel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-         int e = jList1.getSelectedIndex();
-         escuadron.get(e).setNombre(jTextField8.getText());
-         escuadron.get(e).setLugar(jTextField8.getText());
-         JOptionPane.showMessageDialog(this, "Escuadron modificado correctamente");
+        int e = jList3.getSelectedIndex();
+        ((Escuadrones) escuadron.get(e)).setNombre(jTextField8.getText());
+        ((Escuadrones) escuadron.get(e)).setLugar(jTextField8.getText());
+        JOptionPane.showMessageDialog(this, "Escuadron modificado correctamente");
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-       int e = jList2.getSelectedIndex();
+        int e = jList2.getSelectedIndex();
         String cb = (String) jComboBox6.getSelectedItem();
 
         if (cb.equals("Villano")) {
-            villanos.get(e).setNombre(jTextField4.getText());
+            ((supers) villanos.get(e)).setNombre(jTextField12.getText());
         } else {
             heroes.add(new supers(heroes.get(e).getNombre(), heroes.get(e).getPoder(), heroes.get(e).getDebilidad(), " ", heroes.get(e).getFuerza(), heroes.get(e).getAgilidad_física(), heroes.get(e).getAgilidad_menta()));
             villanos.remove(e);
         }
         JOptionPane.showMessageDialog(this, "Villano modificado correctamente");
     }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+       //Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < heroes.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, heroes.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList4.setModel(listModel);
+
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+       //Crear un objeto DefaultListModel
+        DefaultListModel listModel = new DefaultListModel();
+//Recorrer el contenido del ArrayList
+        for (int i = 0; i < villanos.size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
+            listModel.add(i, villanos.get(i));
+        }
+//Asociar el modelo de lista al JList
+        jList6.setModel(listModel);
+    }//GEN-LAST:event_jButton31ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1097,6 +1099,8 @@ public class Marvel extends javax.swing.JFrame {
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
